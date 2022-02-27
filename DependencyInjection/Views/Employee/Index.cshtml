@@ -1,0 +1,20 @@
+﻿@model IEnumerable<DependencyInjection.Models.Employee>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Address</th>
+    </tr>
+    @foreach(var emp in Model)
+             {
+                  <tr>
+                       <td>@emp.Id</td>
+                       <td>@emp.Name</td>
+                       <td>@emp.Email</td>
+                       <td>@emp.Gender</td>
+                       <td>@emp.Address</td>
+                  </tr>
+             }
+</table>
